@@ -13,7 +13,7 @@ cd MidtermScript
 #create file1 & file2
 touch file1 file2 
 
-#list file 
+#list the contents of directory  
 ls 
 
 #define the difference between file1 and file2
