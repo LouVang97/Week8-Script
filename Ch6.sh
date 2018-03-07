@@ -74,19 +74,29 @@ Description=echo service
 ExecStart=-/bin/cat
 StandardInput=socket 
 
+#run the unit 
 systemctl start SocketUnit.echo 
-telnet localhost 22222
-systemctl stop socketUnit.echo 
 
+#test the service
+telnet localhost 22222
+
+#stop the SocketUnit
+systemctl stop SocketUnit.echo 
+
+#view jobs
 initictl list
+
+#start, stop, restart, emit an Upstart job
 initictl start job
 initictl stop job
 initictl restart job
 initictl emit job 
-initictl log-priority info 
 
+#control System V init on runlevel 4
 telinit 4
-telinit q
-telinit s
 
+#make change 
+telinit q
+
+/##reboot in 5 min
 shutdown -r +5
