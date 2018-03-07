@@ -32,10 +32,10 @@ echo a > dir1/file1
 echo b > dir1/file2
 echo c > dir2/fie3
 echo d > dir2/file4
-ln dir1/file1 dir2/file4
+ln dir1/file1 dir2/file5
 
 #view inode details 
-ls -i
+ls -iR dir*
 
 #create an empty file, initialize it as swap, and add it to the swap pool
 dd if=/dev/zero of=swap_file bs=10k count=15
@@ -44,6 +44,3 @@ swapon swap_file
 
 #display the current swap
 free 
-
-#remove swap from the kernel's active pool 
-swapoff swap_file
