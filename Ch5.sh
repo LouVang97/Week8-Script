@@ -18,6 +18,8 @@ echo $ root
 #View all currently set GRUB variables 
 set
 
+#print the configure
 grub-mkconfig
+
+#write and install new configure file 
 grub-mkconfig -o /boot/grub.cfg
-grub-install /sda/dev
