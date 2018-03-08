@@ -1,4 +1,12 @@
 #!/bin/bash
+#Chapter 5
+
+#Check on Kernel system log file
+/var/log/kernel.log
+
+#Check dmesg 
+dmesg | less
+
 #Chapter 6
 
 #Check system's runlevel
