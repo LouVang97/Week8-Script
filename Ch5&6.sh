@@ -88,12 +88,3 @@ telnet localhost 22222
 #stop the SocketUnit
 systemctl stop SocketUnit.echo 
 
-#view jobs
-initictl list
-
-#start, stop, restart, emit an Upstart job
-initictl start job
-initictl stop job
-initictl restart job
-initictl emit job 
-
