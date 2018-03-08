@@ -13,5 +13,3 @@ ls -l
 #copies data in block of a fixed size
 dd if=file87 of=fiile88 ibs=1k obs=1k count=2
 
-#allow administrator as root 
-sudo /lib/udev/ata_id --export /dev/sda
