@@ -4,7 +4,7 @@
 #create files 
 touch file7 file8
 
-#echo /dev/null
+#send blah blah
 echo blah blah > /dev/null
 
 #list contents of directory 
