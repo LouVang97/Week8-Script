@@ -48,16 +48,3 @@ chmod u+x echo.sh
 #run echo.sh 
 ./echo.sh 
 
-#echo path 
-echo $PATH 
-
-#assign hello as a value 
-STUFF=hello 
-
-#send STUFF 
-export STUFF 
-
-#echo STUFF 
-echo $STUFF 
-
-
