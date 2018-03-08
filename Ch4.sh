@@ -1,9 +1,6 @@
 #!/bin/bash
 #Chapter 4
 
-#Change directory 
-cd Linux.zip
-
 #create a 8 MB file with the dd command
 dd if=/dev/zero of=./8MB.img bs=2M count=13
 
