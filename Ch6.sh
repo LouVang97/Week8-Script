@@ -42,9 +42,6 @@ Wants=file1.target
 [Install[
 WantedBy=multi-user.target
 
-#crtl x 
-to get out of nano
-
 #Activate the file2.traget
 systemctl start Unit.target
 
