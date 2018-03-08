@@ -23,7 +23,7 @@ sudo umount /mnt/tmp
 #remount
 sudo mount /mnt/tmp -remount
 
-#give the mount as the argument 
+#check the file
 sudo fsck /mnt/tmp 
 
 #create directories inode contains a list of filenames and then link to other inodes 
@@ -34,7 +34,7 @@ echo c > dir2/fie3
 echo d > dir2/file4
 ln dir1/file1 dir2/file5
 
-#view inode details 
+#view inode 
 ls -iR dir*
 
 #create an empty file, initialize it as swap, and add it to the swap pool
