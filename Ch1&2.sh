@@ -39,9 +39,6 @@ return 0
 
 #exit nano 
 
-#display echo.sh 
-cat ./echo.sh
-
 #assign permission 
 chmod u+x echo.sh 
 
