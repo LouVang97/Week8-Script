@@ -2,7 +2,7 @@
 #Chapter 5
 
 #Check on Kernel system log file
-/var/log/kernel.log
+less /var/log/kernel.log
 
 #Check dmesg 
 dmesg | less
