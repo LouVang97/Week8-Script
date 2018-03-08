@@ -34,7 +34,7 @@ nano echo.sh
 echo "Hello"
 echo "What is your name?"
 read MY_NAME
-echo "Nice to meet you!"
+
 return 0 
 
 #exit nano 
