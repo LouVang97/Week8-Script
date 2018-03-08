@@ -19,7 +19,7 @@ echo $ root
 set
 
 #print the configure
-grub-mkconfig
+sudo grub-mkconfig
 
 #write and install new configure file 
-grub-mkconfig -o /boot/grub.cfg
+sudo grub-mkconfig -o /boot/grub.cfg
