@@ -92,11 +92,3 @@ initictl stop job
 initictl restart job
 initictl emit job 
 
-#control System V init on runlevel 4
-telinit 4
-
-#make change 
-telinit q
-
-/##reboot in 5 min
-shutdown -r +5
