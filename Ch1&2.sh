@@ -28,7 +28,7 @@ mv file1 file2
 #find the format of file1
 file file1
 
-#create nano file
+#create text editor
 nano echo.sh 
 
 echo "Hello"
