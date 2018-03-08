@@ -33,11 +33,3 @@ ln dir1/file1 dir2/file5
 
 #view inode 
 ls -iR dir*
-
-#create an empty file, format it as swap, and add it to the swap pool
-dd if=/dev/zero of=swap_file bs=10k count=15
-sudo mkswap swap_file
-sudo swapon swap_file
-
-#display the current swap
-free 
