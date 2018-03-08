@@ -5,7 +5,7 @@
 dd if=/dev/zero of=./8MB.img bs=2M count=13
 
 #display 8MB file
-hexdump ./8MB.img | less
+sudo hexdump ./8MB.img | less
 
 #write the ext2 filesystem using mkfs 
 sudo mkfs -t ext2 ./8MB.img
