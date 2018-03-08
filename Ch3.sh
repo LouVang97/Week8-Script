@@ -13,3 +13,4 @@ ls -l
 #copies data in block of a fixed size
 dd if=file87 of=fiile88 ibs=1k obs=1k count=2
 
+ls -l
