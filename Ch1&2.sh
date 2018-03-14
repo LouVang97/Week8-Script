@@ -27,21 +27,3 @@ mv file1 file2
 
 #find the format of file1
 file file1
-
-#create text editor
-nano echo.sh 
-
-echo "Hello"
-echo "What is your name?"
-read MY_NAME
-
-return 0 
-
-#exit nano 
-
-#assign permission 
-chmod u+x echo.sh 
-
-#run echo.sh 
-./echo.sh 
-
