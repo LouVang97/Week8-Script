@@ -7,6 +7,23 @@ less /var/log/kernel.log
 #Check dmesg 
 dmesg | less
 
+#press and hold SHIFT to access GRUB when BIOS startup
+
+#Listing GRUB devices 
+ls -l
+
+#Determine the GRUB root with echo 
+echo $ root
+
+#view all current set GRUB variables 
+set
+
+#print the config
+grub-mkconfig
+
+#write and install new config file
+grub-mkconfig -o /boot/gryb.cfg
+
 #Chapter 6
 
 #Check system's runlevel
@@ -35,56 +52,3 @@ systemctl list-jobs
 
 #Change directory
 cd /etc/systemd system
-
-#Used nano to write units
-nano Unit.target
-
-#Inside nano Unit.target
-[Unit]
-Description=file 1
-
-[Unit]
-Description=file 2
-Wants=file1.target
-
-[Install[
-WantedBy=multi-user.target
-
-#Activate the file2.traget
-systemctl start Unit.target
-
-#Verify that both units are active
-systemctl status Unit.target
-
-#Enable the units
-systemctl enable Unit.targetls
-
-#nano to write socket unit 
-nano SocketUnit.echo 
-
-[Unit]
-Description=echo socket 
-
-[Socket]
-ListenStream=22222
-Accept=yes
-
-#create another nano to write service 
-nano service.echo 
-
-[Unit]
-Description=echo service 
-
-[Service]
-ExecStart=-/bin/cat
-StandardInput=socket 
-
-#run the unit 
-systemctl start SocketUnit.echo 
-
-#test the service
-telnet localhost 22222
-
-#stop the SocketUnit
-systemctl stop SocketUnit.echo 
-
